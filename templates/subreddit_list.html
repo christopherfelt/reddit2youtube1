@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+
+{% block title %}Subreddits{% endblock title %}
+
+{% block content %}
+
+<nav class="navbar nav">
+    <form class="form-inline mx-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+  <h3>Subreddits</h3>
+  <div class="container">
+    <div class="row">
+      {% for sub in subreddits  %}
+        <div class="col py-2">
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{ sub.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Subreddit Subscribers</h6>
+                <p class="card-text">Subreddit Description</p>
+                <p class="card-text">Youtube videos in the Last 24 hours</p>
+                <a href="{% url 'subreddit_detail' sub.pk %}" class="btn btn-primary">Details</a>
+            </div>
+            </div>
+        </div>
+      {% empty %}
+        <h3>No Subreddits</h3>
+
+
+      {% endfor %}
+
+    </div>
+  </div>
+
+
+
+
+{% endblock content %}
+

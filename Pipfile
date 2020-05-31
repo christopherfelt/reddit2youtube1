@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+
+[packages]
+django = "==3.0.1"
+psycopg2-binary = "==2.8.4"
+django-allauth = "==0.41.0"
+praw = "*"
+google-auth-oauthlib = "*"
+google-auth = "*"
+google-api-python-client = "*"
+
+[requires]
+python_version = "3.7"

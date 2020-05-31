@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/chrisfelt/.local/share/virtualenvs/r2u3-AaMbJrKg/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true
+}
